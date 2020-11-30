@@ -17,7 +17,6 @@ And User enter subject
 And User enter body
 Then click on send button
 
-
 Scenario: Signout Yahoo mail
 Given User is login sucessfully 
 When User click on user account name for signout
