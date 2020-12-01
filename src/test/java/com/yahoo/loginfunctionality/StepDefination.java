@@ -42,7 +42,7 @@ public class StepDefination {
 
 	@Then("^User enter Username and click on next button$")
 	public void user_enter_Username_and_click_on_next_button() {
-		driver.findElement(By.id("login-username")).sendKeys("surendrapatil27@yahoo.com");
+		driver.findElement(By.id("login-username")).sendKeys("Enter Valid mail id");
 		driver.findElement(By.id("login-signin")).click();
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='password']")));
@@ -50,7 +50,7 @@ public class StepDefination {
 
 	@Then("^User enter password$")
 	public void user_enter_password() {
-		driver.findElement(By.className("password")).sendKeys("Ganesh@86");
+		driver.findElement(By.className("password")).sendKeys("Enter Password ");
 	}
 
 	@Then("^Click on Next button of password$")
